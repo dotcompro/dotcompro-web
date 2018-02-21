@@ -166,6 +166,7 @@ textarea:focus ~ .floating-label
 
 /*		HOMEPAGE	*/
 
+
 #section0 
 {
 	background-image: url('/dotcompro/img/newImages/paint.jpg');
@@ -834,7 +835,7 @@ section.c-gallery img
 .webDev-body  ul li {
   /*border: 1px solid black;*/
   position: relative;
-  background-color: #39c;
+  background-color: #636363;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -915,8 +916,50 @@ section.webDev-info-block
 
 /*		PRICING 	*/
 
+.pricing_body
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 1px solid red;
+	background-color: #617e7e;
+}
 
+.header-block
+{
+	width: 100%;
+	height: 15%;
+	display: table;
+	background-color: red;
+}
 
+.header-block>.wrapper
+{
+	width: 80%;
+	height: 10rem;
+	background-color: aliceblue;
+	margin: auto;
+}
+
+.header-block>.title-left
+{
+
+}
+
+.header-block>.title-right
+{
+	
+}
+
+.title-right>.logo-image
+{
+
+}
+
+section.pricing-section-block
+{
+
+}
 
 /*		CONTACT 	*/
 
