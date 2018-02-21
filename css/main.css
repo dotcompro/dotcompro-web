@@ -531,7 +531,9 @@ footer {
 
 
 
-/*	CORPORATE DESIGN	*/
+	/*======================*/
+	/*	CORPORATE DESIGN	*/
+	/*======================*/
 
 .portfolio-gallery
 {
@@ -809,30 +811,41 @@ section.c-gallery img
 /*		WEB DEVELOPMENT 	*/
 /*==========================*/
 
+.webDev-body
+{
+	display: flex;
+}
+
+.webDev-gallery
+{
+	display: flex;
+	flex: 2;
+	justify-content: center;
+}
 .webDev-body ul {
   list-style: none;
-  display: grid;
-  grid-gap: 5px;
-  border: 1px solid red;
+  display: inline-grid;
+  grid-gap: 0.5%;
+  /*border: 1px solid red;*/
   grid-template-columns: repeat(15, 50px);
   grid-template-rows: repeat(15, 50px);
   
 }
 .webDev-body  ul li {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   position: relative;
   background-color: #39c;
-/*   margin: 5px; */
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  box-shadow: 0px 1px 13px 1px #000;
+  flex-wrap: wrap;
+  box-shadow: 0px 1px 13px 5px #000;
 }
-.webDev-body  p {
+.webDev-body ul p {
   width: 40px;
   height: 40px;
   text-align: center;
-  border: 1px solid #fff;
+  /*border: 1px solid #fff;*/
   font-size: 30px;
 /*   padding: 5px; */
   margin: 0 5px 5px 0;
@@ -842,8 +855,8 @@ section.c-gallery img
 }
 
 #list-1 {  
-  grid-row: span 3;
   grid-column: span 8;
+  grid-row: span 3;
 }
 #list-2 {
   grid-column: span 4;
@@ -851,8 +864,9 @@ section.c-gallery img
 
 }
 #list-3 {
-  grid-row: 4/span 3;
   grid-column: 13/span 6;
+  grid-row: 4/span 3;
+  width: 300px;
 
 }
 #list-4 {
@@ -874,6 +888,28 @@ section.c-gallery img
 #list-8 {
   grid-column: span 5;
   grid-row: span 4;
+}
+
+section.webDev-info-block
+{
+	/*border: 1px solid brown;*/
+	flex: 1;
+}
+
+.webDev-info-block .wrapper
+{
+	/*border: 1px dashed blue;*/
+	padding: 10px;
+	text-align: left;
+	font-size: 150%;
+	width: 90%;
+	margin: auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.webDev-info-block .wrapper p
+{
 }
 
 
@@ -1108,6 +1144,10 @@ section.c-gallery img
 
 @media screen and (max-width: 1183px) 
 {
+
+	/*		Web Development   	*/
+
+
 	.title-left
 	{
 		width: 56rem;
@@ -1118,6 +1158,20 @@ section.c-gallery img
 		transition-duration: 1s;
 		border: none;
 	}
+
+	section.webDev-gallery ul
+	{
+		display: block;
+		padding-right: 30px;
+		overflow-y: scroll;
+	}
+
+	section.webDev-gallery ul li
+	{
+		height: 200px;
+		margin-bottom: 5px;
+	}
+
 }
 
  @media screen and (min-width: 438px) and (max-width: 1183px) 
