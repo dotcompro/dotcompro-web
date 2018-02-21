@@ -1,0 +1,5 @@
+10.08.2017
+
+1. JS, kai sumazini browserio langa is skrolini zemyn ir tada vel i virsu, ne visas turinys matosi. Dalis pasilieka pasislepe virs antrastes.
+2. CSS, mazinant browserio langa, i desine puse pasislepia menu listas, o kairej pusej buna per daug margin ar padding. Turinys nebuna per viduri. HomePageServiceContainer ir HomePageTextContainer yra pozicionuoti neteisingai. Padaryti opacity is 0.8 i 1.
+3. kadangi, portfolio menu atsidarius, menu uzeina uz H1 ir texto, tai labai sunkiai matosi viskas. Reikia pabandyti su JS onmousemove, kad visas saito body pasidarytu arba opacity, arba patamsetu. Bet geriau, kad pasviesetu 

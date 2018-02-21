@@ -1,0 +1,1140 @@
+
+h1, h2, h3, h4, h5, h6, p, div, span, a, ul, li, label, input 
+{
+	font-family: 'Josefin Sans', sans-serif;
+}
+a.serviceLink, a.serviceLink:hover, a.serviceLink:visited, a.serviceLink:active
+{
+	color: inherit;
+	text-decoration: none;
+}
+html 
+{
+	font-size: 14px;
+}
+
+		/*		NAVIGATION   	*/
+li li 
+{
+	background: url('/dotcompro/img/newImages/textBackgroundProPNG-1.png');
+	float: left;
+	padding: 0;
+	margin-left: 0;
+	display: block;
+}
+li.portfolio-submenu
+{
+	margin-top: 0.7rem;
+	margin-left: 0;
+}
+div.slider,
+div.borderContainer 
+{
+	position: relative;
+	border-left: 0.3rem groove black;
+	width: 0.2rem;
+}
+img.dropDownMenuImg
+{
+	padding: 0 0.6rem;
+}
+div.slider,
+div.borderContainer:not(.submenuBorderContainer) 
+{
+	height: 0;
+}
+
+.fullPageOpacity
+{
+	opacity: .2;
+}
+.header-container 
+{
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 6rem; 
+	background: url('/dotcompro/img/newImages/HeaderBackgroundPro45degreePNG.png');
+	background-size: cover;	
+	z-index: 10;
+}
+.navigation li
+{
+	float: left;
+	padding: 0 0.8rem 0 0;
+	margin: 0 0.8rem 0 0;
+}
+
+li.portfolio-submenu
+{
+	margin-top: 5px;
+}
+
+.navigation li img 
+{
+	display: block;
+	height: 100%;
+}
+.menuLinkContainer
+{
+	display: flex;
+	height: 6rem;
+	width: auto;
+	transition: color 1s ease;
+    transition: background 1s ease;
+}
+.portfolio-submenu 
+{
+	height: 5rem;
+}
+.submenuBorderContainer 
+{
+	margin-top: -10%;
+}
+.imageContainer 
+{
+	height: 2rem;
+	display: block;
+	align-self: center;
+	-webkit-align-self: center;
+}
+.toggle-nav
+{
+	display: none;
+}
+.loaded 
+{
+	background-color: rgba(219,33,33,0.6);
+}
+
+
+
+.introText::-webkit-scrollbar
+{
+	width: 2rem;
+	background-color: white;
+	-webkit-body-color: green;
+}
+.introText::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.introText::-webkit-scrollbar-thumb
+{
+	background-color: lightgrey;
+	outline: 1px solid slategrey;
+}
+
+
+
+.floating-label 
+{
+	position: absolute;
+	z-index: 3;
+	font-size: 1.4rem;
+	left: 5rem;
+	top: 1.5rem;
+	color: #a6a6a6;
+}
+
+input:focus ~ .floating-label,
+textarea:focus ~ .floating-label
+{
+	font-size: 1rem;
+	top: 0.5rem;
+}
+
+#fullpage
+{
+	font-family: 'Saira Semi Condensed', sans-serif;
+}
+#top-logo 
+{
+	height: 100%;
+	float: left;
+	margin-left: 2rem;
+}
+#top_logo_img 
+{
+	height: 60%;
+	margin: 5.5% 0;
+}
+#topMenu 
+{
+	float: right;
+}
+
+/*		HOMEPAGE	*/
+
+#section0 
+{
+	background-image: url('/dotcompro/img/newImages/paint.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 1px dotted green;
+}
+#section0 h1 
+{
+	font-size: 4.5rem;
+	padding-top: 0;
+	text-align: center;
+}
+
+h1.homePageTitle
+{
+	position: relative;
+	display: none;
+}
+
+.homePageBoxes 
+{	
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	align-self: center;
+	width: 90%;
+	margin: auto;
+	height: 80%;
+	min-width: 32rem;
+}
+
+.jumbotron p
+{
+	margin-top: 15px;
+}
+
+div.jumbotron 
+{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+div.homePageTextContainer
+{
+	display: block;
+	align-self: center;
+	flex: 1.5;
+	max-height: 36rem;
+	background-color: rgba(255,255,255,0);
+	margin: auto;
+}
+div.introText
+{
+	display: block;
+	width: 80%;
+	margin-right: 0px !important;
+	max-height: 36rem;
+	overflow-y: auto;
+	overflow-x: hidden;
+	text-align: center;
+	border-width: 0.25rem; 
+	box-shadow: 4px 1px 10px 1px gray;
+	opacity:0;
+
+}
+div.introText
+{
+	margin-bottom: 0;
+	background-color: rgba(255,255,255,0.9);
+}
+
+.homeContainer
+{
+	display: block;
+	min-width: 32rem;
+}
+
+#seePortfolioBtn:hover
+{
+	padding-left: 4rem;
+	color: black;
+}
+#seePortfolioBtn 
+{
+	display: block; 
+	margin: 0 auto 2.5% auto;
+	position: relative;
+	border-radius: 0;
+	border: none;
+	background-image: url('/dotcompro/img/newImages/serviceBackgroundPNG.png');
+	background-size: cover;
+	background-repeat: repeat;
+	background-color: rgba(115,115,115,0.7);
+	width: 20rem;
+	color: white;
+	z-index: 10;
+	transition: .6s ease-out;
+}
+
+.homePageServicesContainer  
+{
+	flex: 1;
+}
+.homePageServicesContainer ul 
+{
+	flex-direction: column;
+	align-items: center;
+}
+
+ul ul 
+{
+	display: none;
+	position: absolute;
+}
+ul.serviceList  
+{
+	position: relative;
+}
+a.serviceLink
+{
+	width: 100%;
+	display: block;
+	padding-left: 7rem;
+	text-decoration: none;
+	transition: .6s ease-out;
+}
+
+a.serviceLink:focus {
+	text-decoration: none;
+}
+
+a.serviceLink:hover
+{
+	padding-left: 3rem;
+	color: black;
+}
+.serviceList li
+{
+	position: relative;
+	display: block;
+	width: 36rem;
+	height: 5rem;
+	background-color: rgba(115,115,115,0.7);
+	color: #fff;
+	font-size: 2.8rem;
+	padding: .5rem;
+	margin-top: .25rem;
+	text-align: start;
+	background-image: url('/dotcompro/img/newImages/serviceBackgroundPNG.png');
+	background-size: cover;
+	background-repeat: repeat;
+	z-index: 10;	
+}
+.serviceList li::after, #seePortfolioBtn::after
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	transition: width .6s ease-out;
+	color: #000;
+	background-color: rgba(255, 0, 0, 0.5);
+	z-index: -1;	
+}
+.serviceList li:hover::after, #seePortfolioBtn:hover::after
+{
+	width: 100%;
+}
+
+
+
+/* 	WHY DOTCOMPRO 	*/
+
+.section
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.why-body
+{
+	display: block;
+	height: 100%;	
+}
+
+.section-row
+{
+	width: 100%;
+	display: block;
+}
+
+.section-row#section-1
+{
+	display: block;
+	height: 35%;
+	width: 100%;
+}
+
+.logo-wrapper
+{
+	display: block;
+	width: 40rem;
+	/*width: 40%;*/
+	height: auto;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+.logo-wrapper img
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.section-row#section-2 {
+	height: 40%;
+	min-height: 35rem;
+	color: #fff;
+	/*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
+	background: linear-gradient(-45deg, #ff9f00, #e73c7e, #2395be, #3bffd1);
+	background-size: 300% 500%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/*h1,
+h6 {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	right: 0;
+	left: 0;
+}*/
+
+.table-wrapper
+{
+	display: block;
+	width: 70%;
+	margin: auto;
+	/*border-radius: 3px 3px 7px 7px;*/
+	min-height: 10rem;
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%);
+}
+
+.table-wrapper>.table {
+/*   border: 3px solid #fff; */
+  border-radius: 10px;
+  width: 100%;
+  /*margin: 50px auto;*/
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.table>header {
+  flex: 1; 
+  border: 3px solid #fff;
+  margin-bottom: -3px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+h1 {
+  margin: 10px;
+  padding: 0;
+  
+}
+h6 {
+  font-size: 1rem;
+  margin: 10px;
+  padding: 0;
+}
+
+.table>.body {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.table-2 {
+  flex: 1;
+  border: 3px solid #fff;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.table-2>header {
+  font-size: 25px;
+  margin: 15px;
+}
+
+#box-2 {
+  margin: 0 -3px;
+}
+
+footer {
+  border: 3px solid #fff;
+  height: 20px;
+  border-radius: 0 0 10px 10px;
+  margin-top: -3px;
+  
+}
+
+
+
+
+
+
+.section-row#section-3
+{
+	height: 25%;
+}
+
+
+
+
+/*	CORPORATE DESIGN	*/
+
+.portfolio-gallery
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.portfolio-gallery>.header
+{
+	width: 100%;
+	height: 15%;
+	background-color: #fff;
+}
+
+.portfolio-gallery>.header>.wrapper
+{
+	/*border: 1px solid red;*/
+	display: flex;
+	width: 85%;
+	height: 82px;
+	float: right;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	flex-wrap: wrap; /*sitas turi buti nustasytas media query max-width: 768px, kad wrapintu prie mazo ekrano*/
+	transition-duration: 1s;
+}
+
+.title-left
+{
+	border-bottom: 2px solid #f00;
+	min-width: 45rem;
+	width: 40%;
+	height: 4rem;
+	color: #000;
+}
+
+.title-left>h1
+{
+	font-size: 4rem;
+	text-align: center;
+	margin-top: -1rem;
+	margin-bottom: 0px;
+}
+
+.title-right
+{
+	position: relative;
+	width: 55%;
+	min-width: 55.7rem;
+	height: 40px;
+	margin-top: 38px;
+	border-bottom: 2px solid red;
+	border-left: 2px solid #f00;
+	margin-left: -1px;
+}
+
+.title-right:before
+{
+	content: "";
+	position: absolute;
+	left: -2px;
+	bottom: 0px;
+	border-right: 39px solid white;
+	border-bottom: 39px solid red;
+
+}
+
+.title-right:after
+{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: -2px;
+	border-right: 45px solid transparent;
+	border-bottom: 45px solid white;
+
+}
+
+.title-right>.image-container
+{
+	height: 100%;
+	border: 1px solid #fff;
+	width: 41rem;
+	height: 7rem;
+	margin: -4rem auto auto;
+	background: url('../img/newImages/gallery-logo.jpg') no-repeat;
+	background-size: cover;
+}
+
+
+.portfolio-gallery div.body /*   sitas css yra visu portfolio section puslapiu    */
+{
+	display: flex;
+	height: 60%;
+	width: 100%;
+	margin: auto;
+	/*border: 1px dotted orange;*/
+}
+
+/*.corporate-body */section.c-gallery
+{
+	flex: 1.5;
+	/*border: 1px solid red;*/
+	min-width: 40rem;
+	justify-content: space-around;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	max-height: 900px;
+	height: 80%;
+	margin: auto;
+}
+
+section.c-gallery ul
+{
+	list-style: none;
+	/*border: 1px solid black;*/
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	min-width: 32rem;
+	max-width: 65rem;
+	margin: auto;
+}
+
+section.c-gallery ul li
+{
+	display: block;
+	height: auto;
+	margin: 1rem;
+	width: 100%;
+}
+
+section.c-gallery img
+{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/*.corporate-body */section.info-text-block
+{
+	flex: 1;
+	/*border: 2px dotted blue;*/
+	min-width: 40rem;
+	display: flex;
+}
+
+.info-text-block .wrapper
+{
+	width: 90%;
+	height: 50%;
+	margin: auto;
+	overflow-y: scroll; 
+}
+
+.info-text-block .wrapper p
+{
+	font-size: 150%;
+	letter-spacing: 2px;
+}
+
+.c-gallery
+{
+	display: flex;
+	/*display: none;*/
+}
+
+.c-lightbox
+{
+	display: none;
+	position: absolute;
+	background: rgba(0,0,0, .7) repeat;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+
+.portfolio-gallery>.footer
+{
+	height: 15%;
+	width: 100%;
+	background-color: #fff;
+}
+
+.footer>a
+{
+	text-decoration: none;
+	color: #000;
+	width: 8rem;
+	position: relative;
+}
+
+.footer>a:hover
+{
+	text-decoration: none;
+}
+
+.gradient-btn
+{
+	border: 1px solid black;
+	padding: 10px 15px;
+	font-size: 125%;
+	width: 20rem;
+	border-radius: 3px;
+	background-color: #fff;
+	letter-spacing: 2px;
+	margin: 4% 6%;
+}
+
+
+
+
+/*======================*/
+/*		LOGO DESIGN 	*/
+/*======================*/
+
+.logo-gallery
+{
+	display: flex;
+	flex: 1.5;
+	width: 100%;
+	/*border: 1px solid black;*/
+}
+
+.logo-gallery ul
+{
+	list-style: none;
+	/*border: 1px solid black;*/
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	max-width: 90rem;
+	max-height: 85rem;
+	overflow-y: scroll;
+	outline: none;
+	padding: 5px;
+}
+
+.logo-gallery ul li
+{
+	width: 150px;
+	height: 150px;
+	/*border: 1px solid brown;*/
+	margin: 10px;
+	background-color: #c9c9c9;
+	position: relative;
+}
+
+.logo-gallery ul li:before
+{
+	content: "";
+}
+
+.logo-gallery ul li:after
+{
+	content: "";
+	position: absolute;
+	width: 171px;
+	height: 171px;
+	border: 1px dashed #000;
+	left: -10px;
+	top: -10px;
+}
+
+
+/*==========================*/
+/*		WEB DEVELOPMENT 	*/
+/*==========================*/
+
+.webDev-body ul {
+  list-style: none;
+  display: grid;
+  grid-gap: 5px;
+  border: 1px solid red;
+  grid-template-columns: repeat(15, 50px);
+  grid-template-rows: repeat(15, 50px);
+  
+}
+.webDev-body  ul li {
+  border: 1px solid black;
+  position: relative;
+  background-color: #39c;
+/*   margin: 5px; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  box-shadow: 0px 1px 13px 1px #000;
+}
+.webDev-body  p {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  font-size: 30px;
+/*   padding: 5px; */
+  margin: 0 5px 5px 0;
+/*   position: absolute; */
+  bottom: 5px;
+  right: 5px;  
+}
+
+#list-1 {  
+  grid-row: span 3;
+  grid-column: span 8;
+}
+#list-2 {
+  grid-column: span 4;
+  grid-row: span 6;
+
+}
+#list-3 {
+  grid-row: 4/span 3;
+  grid-column: 13/span 6;
+
+}
+#list-4 {
+  grid-column: span 4;
+  grid-row: span 5;
+}
+#list-5 {  
+  grid-column: span 4;
+  grid-row: span 5;
+}
+#list-6 {
+  grid-column: span 7;
+  grid-row: span 4;
+}
+#list-7 {
+  grid-column: 1/span 3;
+  grid-row: span 7;
+}
+#list-8 {
+  grid-column: span 5;
+  grid-row: span 4;
+}
+
+
+/*		PRICING 	*/
+
+
+
+
+/*		CONTACT 	*/
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+	
+}
+
+@media screen and (max-width: 768px) {
+	/*	navigation  */
+
+	#top_logo_img {
+		height: 50%;
+		margin: 7.5%;
+		transition-duration: .5s;
+	}
+
+	#top-logo {
+		margin-left: 0.5rem;
+		transition-duration: .5s;
+	}
+
+
+	/* why dotcompro*/
+
+	.logo-wrapper
+	{
+		width: 40%;
+	}
+
+	.section-row#section-1
+	{
+		height: 10%;
+	}
+
+
+	#box-2
+	{
+		margin: -3px 0;
+	}
+
+	.table>.body {
+    flex-wrap: wrap;
+    flex-direction: column;    
+	}
+
+	.table-2
+	{
+		padding: 0;
+	}
+
+	.table-wrapper
+	{
+		width: 99%;
+	}
+
+	.table {
+	letter-spacing: 1px;
+	}
+
+	.table>header {
+	font-size: 23px;
+	}
+
+	h1 {
+	font-size: 15px;
+	}
+
+
+	/* corporate design*/
+
+	.portfolio-gallery>.header>.wrapper
+	{
+		width: 100%;
+	}
+
+	div.corporate-body
+	{
+		flex-direction: column;
+	}
+
+	section.c-gallery, section.info-text-block
+	{
+		flex: 1;
+	}
+
+}
+
+@media screen and (max-height: 900px) {
+	
+	/*      why dotcompro   */
+
+	.section-row#section-1
+	{
+		height: 10%;
+		min-height: 60px;
+	}
+
+	.logo-wrapper
+	{
+		width: 10%;
+		min-width: 195px;
+	}
+
+	/*     corporate design    */
+
+	.gradient-btn
+	{
+		margin: 15px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	#section0 h1 {
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+
+	.homeContainer {
+		margin: auto;
+	}
+
+	.homePageBoxes {
+		display: block;
+		margin: auto;
+		height: 57%;
+	}
+	.homePageServicesContainer {
+		width: 32rem;
+	}
+	.homePageServicesContainer ul {
+		display: block;
+	}
+	div.fp-tableCell {
+		display: block !important;
+		padding-top: 6rem;
+	}
+	.serviceList li {
+		width: 32rem;
+	}
+
+	.introText
+	{
+		display: block;
+		width: 100% !important;
+		margin-left: 0 !important;
+	}
+
+	#why-section>#section-2
+	{
+		display: table-cell;
+	}
+
+	.table-wrapper
+	{
+		padding: 10px 0;
+	}
+}
+@media screen and (max-width: 1015px)
+{
+		.toggle-nav
+	{
+		position: absolute;
+		display: block;
+		width: 5rem;
+		height: auto;
+		right: 2rem;
+		top: 0.5rem;
+	}
+
+	.toggle-nav a {
+		display: block;
+		width: 100%;
+	}
+
+	.toggle-nav a img {
+		display: block;
+		width: 100%;
+	}
+
+	.navigation {
+		display: none;
+	}
+
+	.navigation-block 
+	{	
+		position: absolute;
+		right: 4rem;
+		width: 19rem;
+		height: auto;
+		top: 6rem;
+	}
+
+	ul ul 
+	{
+		position: relative;
+		transition-duration: -1.3s;
+	}
+
+	.borderContainer 
+	{
+		display: none;
+	}
+
+	.menuLinkContainer
+	{
+		height: 4rem;
+		background-image: url('/dotcompro/img/newImages/headerBackgroundPro45degreePNG.png');
+		background-size: cover;
+		background-repeat: repeat;
+	}
+	.navigation li
+	{
+		margin-top: 3px;
+	}
+}
+
+
+@media screen and (max-width: 1183px) 
+{
+	.title-left
+	{
+		width: 56rem;
+		border: none;
+	}	
+
+	.title-right, .title-right:before, .title-right:after {
+		transition-duration: 1s;
+		border: none;
+	}
+}
+
+ @media screen and (min-width: 438px) and (max-width: 1183px) 
+{
+	.navigation 
+	{
+		top: 6rem;
+	}
+}
+
+@media screen and (min-width: 1680px) 
+{
+	section.c-gallery ul li
+	{
+		flex-basis: calc(50% - 2rem);
+	}
+}
+
+/*kai atsiranda varnele, paspaudi ir prideda klase, kuri nustato prie tam tikro dydzio ekrano, kad ta klase veiks.
+kai paspaudi ant body, ta klase nuimama, ir kai padidini ekrana, klase irgi nuimama ir menu resetinasi.*/
