@@ -1,10 +1,10 @@
 <div class="section" id ="pricing_section">
 	<div class="pricing_body">
-		<div class="header-block">
-			<div class="wrapper">
-				<div class="title-left">				
+		<div class="pricing-header">
+			<div class="header-wrap">
+				<div class="pricing-title-left">				
 				</div>
-					<div class="title-right">
+					<div class="pricing-title-right">
 						<div class="logo-image">						
 						</div>
 					</div>
@@ -12,24 +12,177 @@
 		</div>
 		<section class="pricing-section-block">
 			<div class="pricing-menu">
-				
+				<ul>
+					<li class="selected">
+						<div class="pricing-list-icon"></div>
+							<a href="#">Web development</a>
+						<div class="border-right"></div>
+					</li>
+					<li><a href="#">Logo design</a></li>
+					<li><a href="#">Corporate design</a></li>
+				</ul>
 			</div>
 				<div class="pricing-list">
 					<div id="webDev">
-						
+						<div class="pricing-container" id="price-1">
+							<div class="icon-wrapper">
+								<div class="pricing-icons" id="icon-image-1"></div>
+							</div>
+							<div class="pricing-description">
+								<h3>Ab € 800</h3>
+								<ul>
+									<li>1-5</li>
+									<li>Fairly attractive</li>
+									<li>No</li>
+									<li>No</li>
+									<li>30</li>
+									<li>No</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pricing-container" id="price-2">
+							<div class="icon-wrapper">
+								<div class="pricing-icons" id="icon-image-2"></div>
+							</div>
+							<div class="pricing-description">
+								<h3>Ab € 1500</h3>
+								<ul>
+									<li>6-15</li>
+									<li>Fairly attractive</li>
+									<li>No</li>
+									<li>No</li>
+									<li>30</li>
+									<li>No</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pricing-container" id="price-3">
+							<div class="icon-wrapper">
+								<div class="pricing-icons" id="icon-image-3"></div>
+							</div>
+							<div class="pricing-description">
+								<h3>Ab € 2000</h3>
+								<ul>
+									<li>16- unlimited</li>
+									<li>High end</li>
+									<li>2 months</li>
+									<li>Yes</li>
+									<li>100</li>
+									<li>Yes</li>
+								</ul>
+							</div>
+						</div>
+							<div class="service-list">
+								<ul>
+									<li>No. of pages</li>
+									<li>Style of design</li>
+									<li>Customer support</li>
+									<li>Responsive design</li>
+									<li>SEO keywords</li>
+									<li>CMS</li>
+								</ul>
+							</div>
 					</div>
-						<div id="logoDesign">
-							
+						<div id="logo-Design">
+							<div class="pricing-container" id="logo-price">
+								<div class="icon-wrapper">
+									<div class="pricing-icons" id="icon-image-1"></div>
+								</div>
+								<div class="pricing-description">
+									<h3>Ab € 800</h3>
+									<ul>
+										<li>Number of concepts: 3-5</li>
+										<li>file formats:</li>
+										<li>*.ai or *.eps, *.jpeg,</li>
+										<li>*.png, *.pdf</li>
+										<li>Colors: CMYK, RGB</li>
+										<li>Full usage and copywrites</li>
+									</ul>
+								</div>
+							</div>
+								<div class="logo-infoText">
+									<span class="logo-textTop">
+										<h4><strong>Logo:</strong></h4>
+										<article>The cornerstone of your company’s visual identity. Sketches and rough drafts will be whittled down to the best three to five logo concepts to present to you. Logos will be applied to mock products to test how each solution would work in the “real world.” Your favorite option will be selected and refined. Includes a final bundle of files suitable for every application, from print to web to promotional items and more, and unrestricted usage rights.</article>
+									</span>
+									<span class="logo-textBottom">
+										<h4><strong>Color specs:</strong></h4>
+										<article>A document listing the specifications for the colors in your logo, used by print vendors and web developers to ensure your brand colors will match across different applications. Pantone, CMYK, RGB, and hexidecimal codes provided.</article>
+									</span>
+								</div>
+								<div class="footer">
+									<div class="footer-image"></div>
+								</div>
 						</div>
 							<div id="c-design">
-								
+								<div class="pricing-container" id="price-1">
+							<div class="icon-wrapper">
+								<div class="pricing-icons" id="icon-image-1"></div>
 							</div>
+							<div class="pricing-description">
+								<h3>Ab € 800</h3>
+								<ul>
+									<li>1-5</li>
+									<li>Fairly attractive</li>
+									<li>No</li>
+									<li>No</li>
+									<li>30</li>
+									<li>No</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pricing-container" id="price-2">
+							<div class="icon-wrapper">
+								<div class="pricing-icons" id="icon-image-2"></div>
+							</div>
+							<div class="pricing-description">
+								<h3>Ab € 1500</h3>
+								<ul>
+									<li>6-15</li>
+									<li>Fairly attractive</li>
+									<li>No</li>
+									<li>No</li>
+									<li>30</li>
+									<li>No</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pricing-container" id="price-3">
+							<div class="icon-wrapper">
+								<div class="pricing-icons" id="icon-image-3"></div>
+							</div>
+							<div class="pricing-description">
+								<h3>Ab € 2000</h3>
+								<ul>
+									<li>16- unlimited</li>
+									<li>High end</li>
+									<li>2 months</li>
+									<li>Yes</li>
+									<li>100</li>
+									<li>Yes</li>
+								</ul>
+							</div>
+						</div>
+							<div class="c-design-infoText">
+									<span class="c-design-textTop">
+										<h4><strong>To keep your brand fresh:</strong></h4>
+										<article>Brands change and evolve and need to adapt their image to stay fresh. Companies should change their corporate identities every seven to ten years to make sure their brand is representing them well and is not outdated. Is your brand in need of a refresh?</article>
+									</span>
+									<span class="c-design-textMiddle">
+										<h4><strong>Your business is expanding:</strong></h4>
+										<article>If your small business is growing (let's hope so!), you may need a rebrand to reflect the larger, more sophisticated business you are now operating. You're now competing with other more established brands in your area, and you need a brand that differentiates your product or services and sets you apart from your competitors.</article>
+									</span>
+									<span class="c-design-textBottom">
+										<h4><strong>It adds value to your business:</strong></h4>
+										<article>A recognizable brand is worth more. It can be developed over time through good customer service, fulfilling your brand promise, meeting expectations and consistent application of a well-designed identity. Part of meeting those expectations is looking professional, and a great visual brand identity makes you look professional.</article>
+									</span>
+								</div>
+
+						</div>
 				</div>
 		</section>
-		<footer class="pricing-footer">
-			<div class="footer-logo">
-				
-			</div>
-		</footer>
+							<div class="footer c-design-footer">
+								<span class="footer-line"></span>
+							</div>
 	</div>
 </div>

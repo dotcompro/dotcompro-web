@@ -1,10 +1,55 @@
-<div class="section" id="section8" class="contactPage">
-
-
+<div class="section" id="contact-section">
+	<div class="contact-body">
+		<div class="header">
+			<span class="title-wrapper"></span>
+		</div>
+		<main class="contact-body-wrapper">
+			<figure class="post-stamp">
+				<span></span>
+			</figure>
+				<form action="#" class="contact-form contact-items">
+					<div class="contact-row">
+						<div class="col-30">
+							<label for="fname">First name</label>
+						</div>
+						<div class="col-70">
+							<input type="text" id="fname" placeholder="Enter your name" required>
+						</div>
+					</div>
+						<div class="contact-row">
+						<div class="col-30">
+							<label for="fname">Last name</label>
+						</div>
+						<div class="col-70">
+							<input type="text" id="lname" placeholder="Enter your last name" required>
+						</div>
+					</div>
+						<div class="contact-row">
+						<div class="col-30">
+							<label for="fname">Company</label>
+						</div>
+						<div class="col-70">
+							<input type="text" id="company" placeholder="Your company">
+						</div>
+					</div>
+					<div class="contact-row">
+						<div class="col-30">
+							<label for="fname">Subject</label>
+						</div>
+						<div id="text-message">
+							<textarea id="message-area" name="msg-area" placeholder="Enter your message here" required></textarea>
+						</div>
+					</div>
+						<input class="action-button" type="submit" value="Send" name="submit">
+						<input class="action-button" type="reset" value="Delete" name="reset">
+				</form>
+		</main>
+	
 
 
 <!-- zemelapis -->
-	<div id="map" style="height: 35%; width: 100%;">
+			<div id="map" style="height: 30%; width: 100%;">
+		</div>
 	</div>
 </div>
 
