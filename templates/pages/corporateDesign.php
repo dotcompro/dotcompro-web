@@ -12,29 +12,31 @@
 		</div>
 		<div class="body corporate-body">
 			<section class="c-gallery">
-				<ul>
+				<ul >
 					<!-- vietoj href #, turi buti linkas i didesne nuotrauka. kaip default ikelta buna maza nuotrauka. -->
-					<li><a href="img/corporateDesign/12.jpg"><img src="img/corporateDesign/thumb-12.jpg" alt=""></a></li>
-					<li><a href="img/corporateDesign/13.jpg"><img src="img/corporateDesign/thumb-13.jpg" alt=""></a></li>
-					<li><a href="img/corporateDesign/21.jpg"><img src="img/corporateDesign/thumb-21.jpg" alt=""></a></li>
-					<li><a href="img/corporateDesign/22.jpg"><img src="img/corporateDesign/thumb-22.jpg" alt=""></a></li>
-					<li><a href="img/corporateDesign/23.jpg"><img src="img/corporateDesign/thumb-23.jpg" alt=""></a></li>
-					<li><a href="img/corporateDesign/25.png"><img src="img/corporateDesign/thumb-25.png" alt=""></a></li>
-					<li><a href="img/corporateDesign/26.jpg"><img src="img/corporateDesign/thumb-26.jpg" alt=""></a></li>
-					<li><a href="img/corporateDesign/27.jpg"><img src="img/corporateDesign/thumb-27.jpg" alt=""></a></li>
+					<li><img src="img/corporateDesign/12.jpg" alt=""></li>
+					<li><img src="img/corporateDesign/13.jpg" alt=""></li>
+					<li><img src="img/corporateDesign/21.jpg" alt=""></li>
+					<li><img src="img/corporateDesign/22.jpg" alt=""></li>
+					<li><img src="img/corporateDesign/23.jpg" alt=""></li>
+					<li><img src="img/corporateDesign/25.png" alt=""></li>
+					<li><img src="img/corporateDesign/26.jpg" alt=""></li>
+					<li><img src="img/corporateDesign/27.jpg" alt=""></li>
 				</ul>
 			</section>
 				<section class="c-lightbox">
-					<ul>
-						<li><a href="#"><img src="img/corporateDesign/12.jpg" alt=""></a></li>
-						<li><a href="#"><img src="img/corporateDesign/13.jpg" alt=""></a></li>
-						<li><a href="#"><img src="img/corporateDesign/21.jpg" alt=""></a></li>
-						<li><a href="#"><img src="img/corporateDesign/22.jpg" alt=""></a></li>
-						<li><a href="#"><img src="img/corporateDesign/23.jpg" alt=""></a></li>
-						<li><a href="#"><img src="img/corporateDesign/25.png" alt=""></a></li>
-						<li><a href="#"><img src="img/corporateDesign/26.jpg" alt=""></a></li>
-						<li><a href="#"><img src="img/corporateDesign/27.jpg" alt=""></a></li>
-					</ul>
+					<img id="gal_arrow_left" src="img/newImages/gallery_arrow_left.png" alt="left">
+						<ul class="lightbox-list">
+							<li><img src="img/corporateDesign/12.jpg" alt=""></li>
+							<li><img src="img/corporateDesign/13.jpg" alt=""></li>
+							<li><img src="img/corporateDesign/21.jpg" alt=""></li>
+							<li class="gallery-active"><img src="img/corporateDesign/22.jpg" alt=""></li>
+							<li><img src="img/corporateDesign/23.jpg" alt=""></li>
+							<li><img src="img/corporateDesign/25.png" alt=""></li>
+							<li><img src="img/corporateDesign/26.jpg" alt=""></li>
+							<li><img src="img/corporateDesign/27.jpg" alt=""></li>
+						</ul>
+					<img id="gal_arrow_right" src="img/newImages/gallery_arrow_right.png" alt="right">
 				</section>
 			<section class="info-text-block">
 				<div class="wrapper">
