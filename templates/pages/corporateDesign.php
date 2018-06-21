@@ -10,10 +10,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="body corporate-body">
+		<div class="p-body corporate-body">
 			<section class="c-gallery">
-				<ul >
+				<ul>
 					<!-- vietoj href #, turi buti linkas i didesne nuotrauka. kaip default ikelta buna maza nuotrauka. -->
+
+
 					<li><img src="img/corporateDesign/12.jpg" alt=""></li>
 					<li><img src="img/corporateDesign/13.jpg" alt=""></li>
 					<li><img src="img/corporateDesign/21.jpg" alt=""></li>
@@ -24,19 +26,20 @@
 					<li><img src="img/corporateDesign/27.jpg" alt=""></li>
 				</ul>
 			</section>
-				<section class="c-lightbox">
-					<img id="gal_arrow_left" src="img/newImages/gallery_arrow_left.png" alt="left">
-						<ul class="lightbox-list">
-							<li><img src="img/corporateDesign/12.jpg" alt=""></li>
-							<li><img src="img/corporateDesign/13.jpg" alt=""></li>
-							<li><img src="img/corporateDesign/21.jpg" alt=""></li>
-							<li class="gallery-active"><img src="img/corporateDesign/22.jpg" alt=""></li>
-							<li><img src="img/corporateDesign/23.jpg" alt=""></li>
-							<li><img src="img/corporateDesign/25.png" alt=""></li>
-							<li><img src="img/corporateDesign/26.jpg" alt=""></li>
-							<li><img src="img/corporateDesign/27.jpg" alt=""></li>
-						</ul>
-					<img id="gal_arrow_right" src="img/newImages/gallery_arrow_right.png" alt="right">
+				<section class="lightbox">
+					<span onclick="closeModal()" class="closeBtn cursor" >&times;</span>
+						<img id="gal_arrow_left" src="img/newImages/gallery_arrow_left.png" alt="left">
+							<ul class="lightbox-list">
+								<li><img src="img/corporateDesign/12.jpg" alt=""></li>
+								<li><img src="img/corporateDesign/13.jpg" alt=""></li>
+								<li><img src="img/corporateDesign/21.jpg" alt=""></li>
+								<li><img src="img/corporateDesign/22.jpg" alt=""></li>
+								<li><img src="img/corporateDesign/23.jpg" alt=""></li>
+								<li><img src="img/corporateDesign/25.png" alt=""></li>
+								<li><img src="img/corporateDesign/26.jpg" alt=""></li>
+								<li><img src="img/corporateDesign/27.jpg" alt=""></li>
+							</ul>
+						<img id="gal_arrow_right" src="img/newImages/gallery_arrow_right.png" alt="right">
 				</section>
 			<section class="info-text-block">
 				<div class="wrapper">

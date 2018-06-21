@@ -13,18 +13,18 @@
 				    <h6>textas mazom raidem</h6>
 				  </header>
 				  <div class="body">
-				    <div class="table-2" id="box-1">
-				      <header>Header nr 1</header>
+				    <section class="table-2" id="box-1">
+				      <h2>Header nr 1</h2>
 				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum aliquam, nemo eveniet delectus, accusantium corporis.</p>
-				    </div>
-				    <div class="table-2" id="box-2">
-				      <header>Header nr 1</header>
+				    </section>
+				    <section class="table-2" id="box-2">
+				      <h2>Header nr 1</h2>
 				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum aliquam, nemo eveniet delectus, accusantium corporis.</p>
-				    </div>
-				    <div class="table-2" id="box-3">
-				      <header>Header nr 1</header>
+				    </section>
+				    <section class="table-2" id="box-3">
+				      <h2>Header nr 1</h2>
 				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum aliquam, nemo eveniet delectus, accusantium corporis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum aliquam, nemo eveniet delectus, accusantium corporis</p>
-				    </div>
+				    </section>
 				  </div>
 				  <footer></footer>
 				</div>				 		

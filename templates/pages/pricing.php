@@ -15,15 +15,26 @@
 				<ul>
 					<li class="selected">
 						<div class="pricing-list-icon"></div>
-							<a href="#">Web development</a>
+							<a href="#"><p>Web development</p></a>
 						<div class="border-right"></div>
 					</li>
-					<li><a href="#">Logo design</a></li>
-					<li><a href="#">Corporate design</a></li>
+
+					<li>
+						<div class="pricing-list-icon"></div>
+							<a href="#"><p>Logo design</p></a>
+						<div class="border-right"></div>
+					</li>
+
+					<li>
+						<div class="pricing-list-icon"></div>
+							<a href="#"><p>Corporate design</p></a>
+						<div class="border-right"></div>
+					</li>
 				</ul>
 			</div>
 				<div class="pricing-list">
 					<div id="webDev">
+						<!-- color of the footer line- orange. transition-duration: 1s -->
 						<div class="pricing-container" id="price-1">
 							<div class="icon-wrapper">
 								<div class="pricing-icons" id="icon-image-1"></div>
@@ -31,12 +42,12 @@
 							<div class="pricing-description">
 								<h3>Ab € 800</h3>
 								<ul>
-									<li>1-5</li>
-									<li>Fairly attractive</li>
-									<li>No</li>
-									<li>No</li>
-									<li>30</li>
-									<li>No</li>
+									<li><p>1-5</p></li>
+									<li><p>Fairly attractive</p></li>
+									<li><p>No</p></li>
+									<li><p>No</p></li>
+									<li><p>30</p></li>
+									<li><p>No</p></li>
 								</ul>
 							</div>
 						</div>
@@ -47,12 +58,12 @@
 							<div class="pricing-description">
 								<h3>Ab € 1500</h3>
 								<ul>
-									<li>6-15</li>
-									<li>Fairly attractive</li>
-									<li>No</li>
-									<li>No</li>
-									<li>30</li>
-									<li>No</li>
+									<li><p>6-15</p></li>
+									<li><p>Fairly attractive</p></li>
+									<li><p>No</p></li>
+									<li><p>No</p></li>
+									<li><p>30</p></li>
+									<li><p>No</p></li>
 								</ul>
 							</div>
 						</div>
@@ -63,27 +74,28 @@
 							<div class="pricing-description">
 								<h3>Ab € 2000</h3>
 								<ul>
-									<li>16- unlimited</li>
-									<li>High end</li>
-									<li>2 months</li>
-									<li>Yes</li>
-									<li>100</li>
-									<li>Yes</li>
+									<li><p>16- unlimited</p></li>
+									<li><p>High end</p></li>
+									<li><p>2 months</p></li>
+									<li><p>Yes</p></li>
+									<li><p>100</p></li>
+									<li><p>Yes</p></li>
 								</ul>
 							</div>
 						</div>
 							<div class="service-list">
 								<ul>
-									<li>No. of pages</li>
-									<li>Style of design</li>
-									<li>Customer support</li>
-									<li>Responsive design</li>
-									<li>SEO keywords</li>
-									<li>CMS</li>
+									<li><p>No. of pages</p></li>
+									<li><p>Style of design</p></li>
+									<li><p>Customer support</p></li>
+									<li><p>Responsive design</p></li>
+									<li><p>SEO keywords</p></li>
+									<li><p>CMS</p></li>
 								</ul>
 							</div>
 					</div>
 						<div id="logo-Design">
+							<!-- color of the footer line- red. transition-duration: 1s -->
 							<div class="pricing-container" id="logo-price">
 								<div class="icon-wrapper">
 									<div class="pricing-icons" id="icon-image-1"></div>
@@ -91,12 +103,12 @@
 								<div class="pricing-description">
 									<h3>Ab € 800</h3>
 									<ul>
-										<li>Number of concepts: 3-5</li>
-										<li>file formats:</li>
-										<li>*.ai or *.eps, *.jpeg,</li>
-										<li>*.png, *.pdf</li>
-										<li>Colors: CMYK, RGB</li>
-										<li>Full usage and copywrites</li>
+										<li><p>Number of concepts: 3-5</p></li>
+										<li><p>file formats:</p></li>
+										<li><p>*.ai or *.eps, *.jpeg,</p></li>
+										<li><p>*.png, *.pdf</p></li>
+										<li><p>Colors: CMYK, RGB</p></li>
+										<li><p>Full usage and copywrites</p></li>
 									</ul>
 								</div>
 							</div>
@@ -115,6 +127,7 @@
 								</div>
 						</div>
 							<div id="c-design">
+								<!-- color of the footer line- #b600a0. transition-duration: 1s -->
 								<div class="pricing-container" id="price-1">
 							<div class="icon-wrapper">
 								<div class="pricing-icons" id="icon-image-1"></div>
@@ -122,12 +135,12 @@
 							<div class="pricing-description">
 								<h3>Ab € 800</h3>
 								<ul>
-									<li>1-5</li>
-									<li>Fairly attractive</li>
-									<li>No</li>
-									<li>No</li>
-									<li>30</li>
-									<li>No</li>
+									<li><p>1-5</p></li>
+									<li><p>Fairly attractive</p></li>
+									<li><p>No</p></li>
+									<li><p>No</p></li>
+									<li><p>30</p></li>
+									<li><p>No</p></li>
 								</ul>
 							</div>
 						</div>
@@ -138,12 +151,12 @@
 							<div class="pricing-description">
 								<h3>Ab € 1500</h3>
 								<ul>
-									<li>6-15</li>
-									<li>Fairly attractive</li>
-									<li>No</li>
-									<li>No</li>
-									<li>30</li>
-									<li>No</li>
+									<li><p>6-15</p></li>
+									<li><p>Fairly attractive</p></li>
+									<li><p>No</p></li>
+									<li><p>No</p></li>
+									<li><p>30</p></li>
+									<li><p>No</p></li>
 								</ul>
 							</div>
 						</div>
@@ -154,12 +167,12 @@
 							<div class="pricing-description">
 								<h3>Ab € 2000</h3>
 								<ul>
-									<li>16- unlimited</li>
-									<li>High end</li>
-									<li>2 months</li>
-									<li>Yes</li>
-									<li>100</li>
-									<li>Yes</li>
+									<li><p>16- unlimited</p></li>
+									<li><p>High end</p></li>
+									<li><p>2 months</p></li>
+									<li><p>Yes</p></li>
+									<li><p>100</p></li>
+									<li><p>Yes</p></li>
 								</ul>
 							</div>
 						</div>
