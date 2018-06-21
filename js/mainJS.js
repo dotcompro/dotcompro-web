@@ -237,58 +237,7 @@ $(document).ready(function(){
 			console.log('clicked on: ' + next_section_clicked_li.index());
 		});
 
-
-			// lightbox gallery functions
-
-		// var slideIndex = 0;	
-		// var n = 1;
-		//surasti next() element of the parent
-		// koks yra .lightbox ul li length
-		// 
-
-		// function changeSlide(activeSlide, next_section_ul, next_section_clicked_li) {
-		// 	console.log('activeSlide index: ' + activeSlide.index());
-		// 	console.log('children length: ' + next_section_ul.children().length);
-		// 	console.log(next_section_ul);
-		// 	console.log(next_section_clicked_li);
-			
-		// 			.lightbox-list ul li
-		// 	var myList = next_section_ul.children();
-		// 			index of the slide clicked
-		// 	var myActiveSlide = activeSlide.index();
-
-
-
-
-
-		// 	var nextSlideRight = $('#gal_arrow_right');
-
-		// 	nextSlideRight.on('click', function() {
-
-		// 		myList.eq(myActiveSlide).removeClass('gallery-active');
-		// 		myActiveSlide++;
-		// 		myList.eq(myActiveSlide).addClass('gallery-active');
-		// 		console.log(myActiveSlide);
-		// 		console.log(myList.length);
-		// 		if(myActiveSlide === myList.length-1) {
-		// 			myActiveSlide = 0;
-		// 			myList.eq(myList.length-1).removeClass('gallery-active');
-		// 			myList.eq(myActiveSlide).addClass('gallery-active');
-		// 		}
-
-			
-		// 		activeSlide.removeClass('gallery-active');					
-		// 		next_active_slide.addClass('gallery-active');					
-		// 		activeSlide.index().eq(actualSlideIndex).removeClass('gallery-active');
-		// 		activeSlide.index().eq(actualSlideIndex + n).addClass('gallery-active');
-		// 	});
-
-		// 	var nextSlideLeft = $('#gal_arrow_left');
-
-		// 	nextSlideLeft.on('click', function() {
-
-		// 	});
-		// };
+			// lighbox slide functions
 
 
 			function moveRight(clicked_lightboxList, list_count, currentSlide) {
@@ -301,12 +250,7 @@ $(document).ready(function(){
 					currentSlide = 0;
 					clicked_lightboxList.children().eq(currentSlide).addClass('gallery-active');
 				}
-				// 
-				// if currentSlide === list_count-1
-				// 	jei pasieki 7, tai 7 nuimti klase ir prideti klase currentSlide 0
-				// 	clicked_lightboxList.children.eq(currentSlide+1) removeclass
-				// 	clicked_lightboxList.children.eq(currentSlide kas yra 0) removeclass
-				// 
+			
 				console.log('current slide: ' + (currentSlide + 2));
 			}
 
@@ -320,13 +264,6 @@ $(document).ready(function(){
 					clicked_lightboxList.children().eq(currentSlide).addClass('gallery-active');
 				}
 
-
-
-				// object.animate({
-
-				// }, 200, function (){
-
-				// });
 				console.log('current slide: ' + currentSlide);
 			};
 
@@ -337,11 +274,9 @@ $(document).ready(function(){
 				//this yra <img id="gal_arrow_right" src="img/newImages/gallery_arrow_right.png" alt="right">
 				var clicked_lightboxList = $(this).prev();
 				//clicked_lightboxList reskia ul.lightbox-list
-				// console.log(clicked_lightboxList);
-				// console.log(clicked_lightboxList.children().length);
+		
 				var list_count = clicked_lightboxList.children().length;
 				var currentSlide = clicked_lightboxList.children('.gallery-active').index();
-				// console.log('ijungta pries tai slide: ' + currentSlide);
 
 				moveRight(clicked_lightboxList, list_count, currentSlide);
 			});
@@ -400,6 +335,7 @@ $(document).ready(function(){
 			});
 		};
 
+
 		//pricing menu click function
 
 		function clickMenu() {
@@ -448,67 +384,3 @@ $(document).ready(function(){
 		};
 
 		$(document).ready(closeModal);
-
-
-
-
-
-
-
-	
-
-
-
-			
-
-
-
-
-
-		
-
-		// var slideIndex = 1;
-		// showSlides(slideIndex);
-
-
-		// function plusSlides(n) {
-	
-		// 	showSlides(slideIndex += n);
-		// }
-
-		// function currentSlide(n) {
-		// 	showSlides(slideIndex = n);
-		// 	console.log('picture slideindex: ' + n);
-		// }
-
-		// function showSlides(n) {
-		// 	var bodySecondChild = $(this).children()[1]; section su klase .lightbox
-		// 	var childrenSlides = $(this).find('ul:first-child li'); array of ul li
-		// 	if (n > childrenSlides.length) {
-		// 		slideIndex = 1;
-		// 	} else if (n < 1) {
-		// 		slideIndex = childrenSlides.length;
-		// 	}
-
-		// 	for (var i = 0; i < slideIndex.length; i++) {
-		// 		childrenSlides[i].addClass('gallery-active');
-		// 	}
-		// }
-
-
-
-
-
-		// get $(this) img is clicked on. 
-		// .corporate-body>.lightbox is fadeIn(800);
-		// the image is clicked on is the first image of .lightbox has #gallery-active. 
-		// slide show is endless back or forwards.
-		// (#gallery-active)on('click') issijungia lightbox.
-
-
-
-
-
-
-
-

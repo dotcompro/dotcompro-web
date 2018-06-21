@@ -236,7 +236,7 @@ div.introText
 	display: block;
 	width: 80%;
 	margin-right: 0px !important;
-	max-height: 36rem;
+	/*max-height: 36rem;*/
 	overflow-y: auto;
 	overflow-x: hidden;
 	text-align: center;
@@ -2355,7 +2355,11 @@ ul li.gallery-active img
 		height: 200px;
 		margin-bottom: 15px;
 	}
-
+	
+	section.webDev-gallery ul li img
+	{
+		max-width: 45%;
+	}
 	/*		Logo Design		*/
 
 	.footer-image
