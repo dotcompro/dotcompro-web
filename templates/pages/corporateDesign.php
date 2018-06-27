@@ -51,7 +51,7 @@
 			</section>
 		</div>
 		<div class="footer">
-			<a href="#"><div class="gradient-btn">Check the prices</div></a>
+			<div class="gradient-btn"><a href="#pricing"><p>Check the prices</p></a></div>
 		</div>
 	</div>
 </div>

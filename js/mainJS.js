@@ -49,7 +49,7 @@
 
 	var inputDescription_up = 
 	{
-		init: function($surroundingDivClassName) 
+		init: function(surroundingDivClassName) 
 		{
 			$('.'+surroundingDivClassName + ' .floating-label').css({'font-size':'1rem', 'top': '0.5rem'});
 			//$('.'+surroundingDivClassName + ' .floating-label').css('top', '0.5rem');
@@ -369,6 +369,67 @@ $(document).ready(function(){
 		clickMenu();
 
 
+
+		// contact form validation
+
+
+		$('.contact-form').submit(function(event){
+
+			var first_name = $('input[name="first_name"]').val();
+			var last_name = $('input[name="last_name"]').val();
+			var email = $('input[name="email"]').val();
+			var company = $('input[name="company"]').val();
+			var message = $('textarea[name="msg-area"]').val();
+
+			// event.preventDefault();
+			console.log('contact form submitted ');
+			console.log(first_name.length);
+			console.log(last_name.length);
+			console.log(company.length);
+			console.log(email.length);
+			console.log(email);
+			console.log(message.length);
+
+			var contactForm = {
+				firstName: first_name.length,
+				lastName: last_name.length,
+				email: email.length,
+				message: message.length
+			}
+
+
+
+			jQuery.each(contactForm, function(index, value) {
+
+				if(value < 1) {
+					alert(index + ' is empty field');
+					event.preventDefault();
+				}
+			});
+
+			if ($.trim(email).length == 0) {
+					alert ('enter valid email');
+					event.preventDefault();
+				};
+
+				if (validateEmail(email)) {
+					return;
+				} else {
+					alert ('invalid email');
+					event.preventDefault();
+				};
+
+				function validateEmail(email) {
+		        var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		        if(regex.test(email)) {
+		           return true;
+		        } else {
+		           return false;
+		        }
+		      };
+
+		      validateEmail();
+		});
 
 
 

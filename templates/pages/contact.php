@@ -1,52 +1,68 @@
 <div class="section" id="contact-section">
 	<div class="contact-body">
-		<div class="header">
-			<span class="title-wrapper"></span>
-		</div>
 		<main class="contact-body-wrapper">
-			<figure class="post-stamp">
-				<span></span>
-			</figure>
-				<form action="#" class="contact-form contact-items">
+			<div class="header">
+				<span class="title-wrapper"></span>
+			</div>
+
+
+
+				<!-- <form method="POST" action="mail.php" class="contact-form contact-items" name="contact-form"> -->
+
+					<form class="contact-form contact-items" name="contact-form">
+
 					<div class="contact-row">
 						<div class="col-30">
 							<label for="fname">First name</label>
 						</div>
 						<div class="col-70">
-							<input type="text" id="fname" placeholder="Enter your name" required>
+							<input type="text" id="firstName" placeholder="Enter your name" name ="first_name">
 						</div>
 					</div>
-						<div class="contact-row">
-						<div class="col-30">
-							<label for="fname">Last name</label>
-						</div>
-						<div class="col-70">
-							<input type="text" id="lname" placeholder="Enter your last name" required>
-						</div>
-					</div>
-						<div class="contact-row">
-						<div class="col-30">
-							<label for="fname">Company</label>
-						</div>
-						<div class="col-70">
-							<input type="text" id="company" placeholder="Your company">
-						</div>
-					</div>
+
 					<div class="contact-row">
 						<div class="col-30">
-							<label for="fname">Subject</label>
+							<label for="lname">Last name</label>
 						</div>
-						<div id="text-message">
-							<textarea id="message-area" name="msg-area" placeholder="Enter your message here" required></textarea>
+						<div class="col-70">
+							<input type="text" id="lastName" placeholder="Enter your last name" name="last_name">
 						</div>
 					</div>
+
+					<div class="contact-row">
+						<div class="col-30">
+							<label for="company">Company</label>
+						</div>
+						<div class="col-70">
+							<input type="text" id="company" placeholder="Your company" name="company">
+						</div>
+					</div>
+
+					<div class="contact-row">
+						<div class="col-30">
+							<label for="email">E-mail</label>
+						</div>
+						<div class="col-70">
+							<input type="email" id="email" placeholder="Your email" name="email">
+						</div>
+					</div>
+
+					<div class="contact-row">
+						<div class="col-30">
+							<label for="subject">Message</label>
+						</div>
+						<div id="text-message">
+							<textarea id="message-area" name="msg-area" placeholder="Enter your message here"></textarea>
+						</div>
+					</div>
+
 						<input class="action-button" type="submit" value="Send" name="submit">
 						<input class="action-button" type="reset" value="Delete" name="reset">
 				</form>
-		</main>
 	
 
 
+		</main>
 <!-- zemelapis -->
 			<div id="map" style="height: 30%; width: 100%;">
 		</div>

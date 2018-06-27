@@ -1,5 +1,5 @@
 <div class="section" id ="pricing_section">
-	<div class="pricing_body">
+	<div class="pricing_body">       <!--         -->  
 		<div class="pricing-header">
 			<div class="header-wrap">
 				<div class="pricing-title-left">				
@@ -10,7 +10,7 @@
 					</div>
 			</div>
 		</div>
-		<section class="pricing-section-block">
+		<section class="pricing-section-block"> <!--  -->
 			<div class="pricing-menu">
 				<ul>
 					<li class="selected">
@@ -122,9 +122,9 @@
 										<article>A document listing the specifications for the colors in your logo, used by print vendors and web developers to ensure your brand colors will match across different applications. Pantone, CMYK, RGB, and hexidecimal codes provided.</article>
 									</span>
 								</div>
-								<div class="footer">
+								<!-- <div class="footer">
 									<div class="footer-image"></div>
-								</div>
+								</div> -->
 						</div>
 							<div id="c-design">
 								<!-- color of the footer line- #b600a0. transition-duration: 1s -->

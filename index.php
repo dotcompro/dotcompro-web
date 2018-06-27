@@ -18,3 +18,4 @@
 
 	require "templates/pages/pricing.php";
 	require "templates/pages/contact.php";
+	// include "mail.php";
