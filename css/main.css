@@ -2,6 +2,7 @@
 h1, h2, h3, h4, h5, h6, p, div, span, a, ul, li, label, input 
 {
 	font-family: 'Josefin Sans', sans-serif;
+	/*font-family: 'Saira Semi Condensed', sans-serif;*/
 }
 a.serviceLink, a.serviceLink:hover, a.serviceLink:visited, a.serviceLink:active
 {
@@ -155,7 +156,7 @@ textarea:focus ~ .floating-label
 
 #fullpage
 {
-	font-family: 'Saira Semi Condensed', sans-serif;
+	/*font-family: 'Saira Semi Condensed', sans-serif;*/
 }
 #top-logo 
 {
@@ -1160,10 +1161,8 @@ div.pricing_body:after
 .pricing-section-block
 {
 	display: flex;
-	/*width: 80%;*/
 	width: 100%;
 	margin: auto;
-	/*padding-top: 50px;*/
 	padding-top: 80px;
 	max-width: 140rem;
 	height: 60%;
@@ -1179,11 +1178,9 @@ section.pricing-section-block:after {
     border-bottom: 1px solid gray;
     width: 300%;
     left: -100%;
-    /*top: -8rem;*/
     top: 0;
-    /*height: 42%;*/
     height: 100%;
-    box-shadow: 0px 0px 14px 0px rgba(0,0,0,.7);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,.7);
     z-index: -1;
     background-color: #fff;
 }
@@ -1508,7 +1505,7 @@ li .pricing-list-icon
 
 .footer-line
 {
-	display: block;
+	display: none;
 	background-color: #ed9f00;
 	height: 2rem;
 	width: 100%;
@@ -1572,8 +1569,8 @@ form.contact-form
 	width: 70rem;
 	margin: auto 10% auto auto;
 	min-width: 32rem;
-	padding: 35px 35px 35px 0;
-	background-color: rgba(0,0,0,.59);
+	padding: 30px;
+	background-color: #3a3a3a;
 	position: relative;
 	z-index: 0;
 }
@@ -1595,11 +1592,18 @@ form.contact-form:after
 .contact-row
 {
 	display: inline-block;
-	width: 100%;
+	width: 50%;
 	min-width: 32rem;
+	float: left;
 }
 
-.col-30
+.contact-row-msg
+{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/*.col-30
 {
 	float: left;
 	width: 30%;
@@ -1612,96 +1616,219 @@ form.contact-form:after
 .col-30 label
 	{
 		font-weight: 100;
-		color: #fff;
-	}
+		color: #8b8b8b;
+	}*/
 
 .col-70
 {
-	float: left;
-	width: 70%;
+	width: 97%;
+	margin: 1%;
+	position: relative;
 }
 
 
 input[type=text], input[type=email], textarea
 {
 	outline: none;
-	border: .1rem solid #5a5a5a;
+	border: none;
+	height: 40px;
+	border-bottom: 1px solid #636363;
+	background-color: transparent;
 	transition-duration: .5s;
-	padding: 5px;
+	padding: 2px 2px 2px 5px;
 	width: 100%;
+	color: #a5a5a5;
+	font-size: 16px;
+	letter-spacing: 1px;
 }
+
+
 
 ::-webkit-input-placeholder
 {
-	font-size: 11px;
-	color: rgba(18,18,18,.8);
-	letter-spacing: 1px;
+	font-size: 12px;
+	color: #a5a5a5;
+	letter-spacing: 2px;
 }
 
 ::-ms-input-placeholder
 {
-	font-size: 11px;
-	color: rgba(18,18,18,.8);
-	letter-spacing: 1px;
+	font-size: 12px;
+	color: #a5a5a5;
+	letter-spacing: 2px;
 }
 
 ::-moz-placeholder
 {
-	font-size: 11px;
-	color: rgba(18,18,18,.8);
-	letter-spacing: 1px;
+	font-size: 12px;
+	color: #a5a5a5;
+	letter-spacing: 2px;
 }
 
 ::placeholder
 {
-	font-size: 11px;
-	color: rgba(18,18,18,.8);
-	letter-spacing: 1px;
+	font-size: 12px;
+	color: #a5a5a5;
+	letter-spacing: 2px;
 }
 
 input[type=text]:focus, input[type=email]:focus, textarea:focus
 {
-	box-shadow: 0px 0px 10px 4px #000;
+	box-shadow: 0px 0px 0px 1px #ff7400;
 }
 
 #text-message
 {
-	float: left;
-	width: 70%;
+	width: 100%;
+	position: relative;
 }
 
 #message-area
 {
 	height: 20rem;
 	width: 100%;
-	margin: 0;
+	margin: auto;
+	padding: 5px 35px 5px 5px;
+	color: #a5a5a5;
+	font-size: 2rem;
 }
 
 input.action-button
 {
-	width: 10rem;
+	width: 13rem;
+	height: 4rem;
 	display: inline-block;
-	position: relative;
-	left: 29%;
-	margin-left: 5px;
-	font-size: 120%;
-	background-color: #fff;
-	border: 1px solid #000;
+	font-size: 1.6rem;
+	background-color: #3a3a3a;
+	border: 1px solid #636363;
+	border-radius: 3px;
 	letter-spacing: 1px;
-	transition-duration: .5s;
 	position: relative;
-	transition-duration: .3s;
-	transition-timing-function: ease-in;
-	color: #000;
+	left: 50%;
+	transform: translate(-100%, 0);
+	transition-duration: .5s;
+	color: #7e7e7e;
 }
 
-input.action-button:hover {
-    box-shadow: 2px 2px 13px 2px #454545;
-    transform: scale(1.1);
-    border-radius: 3px;
-    color: #fff;
-    background-color: rgb(255,0,0);
+input.action-button:hover, p.contact-toggle-btn:hover 
+{
+  border: 1px solid #ff7400;
+  color: #b9b9b9;
 }
+
+hr.hr {
+	margin: 15px 0;
+	border: none;
+	clear: both;
+	width: 100%;
+}
+
+.valid {
+	position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 3px;
+    background-image: url('../img/varnelePNG.png');
+    background-size: cover;
+}
+
+.invalid
+{
+	margin: 0;
+    padding: 2px;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    height: 28px; 
+    width: auto;
+    bottom: -28px;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 1;
+    border-radius: 3px;
+    display: none;
+}
+
+
+/*==========================*/
+/* 			MY CONTACTS  	*/
+/*==========================*/
+
+
+section.address
+{
+	color: #7e7e7e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /*height: 100%;*/
+    height: 0;
+    background-color: #3a3a3a;
+    display: flex;
+    border-top-left-radius: 3px;
+    letter-spacing: 2px;
+    visibility: hidden;
+    transition-duration: .5s;
+}
+
+section.addressToggle
+{
+	visibility: visible;
+	height: 100%;
+}
+
+section.address:before
+{
+	content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/pricingImages/infoText_bck.png) repeat;
+    background-size: contain;
+}
+
+p.contact-toggle-btn
+{
+	color: #7e7e7e;
+	height: 45px;
+    width: 130px;
+    padding: 10px 26px;
+    margin: 0;
+    border: 1px solid #636363;
+    font-size: 18px;
+    position: absolute;
+    top: -45px;
+    right: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: none;
+    background-color: #3a3a3a;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition-duration: .5s;
+    visibility: visible;
+}
+
+.address-wrapper
+{
+	border: 1px solid;
+    width: 32rem;
+    padding: 35px;
+    margin: auto;
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    display: none;
+}
+
+
+
+
+
 
 /*==========================*/
 /* 			GALLERY			*/
@@ -2020,20 +2147,39 @@ ul li.gallery-active img
 		margin: auto;
 	}
 
-	.col-30
-	{
-		font-size: 100%;
-	}
 
-	.contact-body:before {
+	.contact-body:before
+	{
 		width: 100%;
 		margin: 0;
 		height: 70%;
 	}
 
-	.contact-body:after {
+	.contact-body:after
+	{
 		height: 70%;
 		margin: 0;
+	}
+
+	#message-area
+	{
+		font-size: 1.6rem;
+	}
+
+	input.action-button
+	{
+		width: 9rem;
+		height: 3.5rem;
+		left: 28%;
+	}
+
+	p.contact-toggle-btn
+	{
+		height: 30px;
+		width: 100px;
+		padding: 4px 16px;
+		font-size: 15px;
+		top: -30px;
 	}
 
 

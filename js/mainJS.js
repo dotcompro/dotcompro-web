@@ -372,64 +372,204 @@ $(document).ready(function(){
 
 		// contact form validation
 
-
-		$('.contact-form').submit(function(event){
-
-			var first_name = $('input[name="first_name"]').val();
-			var last_name = $('input[name="last_name"]').val();
-			var email = $('input[name="email"]').val();
-			var company = $('input[name="company"]').val();
-			var message = $('textarea[name="msg-area"]').val();
-
-			// event.preventDefault();
-			console.log('contact form submitted ');
-			console.log(first_name.length);
-			console.log(last_name.length);
-			console.log(company.length);
-			console.log(email.length);
-			console.log(email);
-			console.log(message.length);
-
-			var contactForm = {
-				firstName: first_name.length,
-				lastName: last_name.length,
-				email: email.length,
-				message: message.length
-			}
+		var first_name = $('input[name="first_name"]');
+		var last_name = $('input[name="last_name"]');
+		var email = $('input[name="email"]');
+		var company = $('input[name="company"]');
+		var message = $('textarea[name="msg-area"]');
 
 
 
-			jQuery.each(contactForm, function(index, value) {
+		var contactForm = {
+			// index:   value
+			firstName: first_name,
+			lastName: last_name,
+			email: email,
+			message: message
+		}
 
-				if(value < 1) {
-					alert(index + ' is empty field');
-					event.preventDefault();
-				}
+		var validText = ['name', 'last name', 'company','email', 'message'];
+		var inputElementClass = $('.form-validation');
+		var indexItem = inputElementClass.index(this);
+		var emailElement = $('input#email');
+		var messagelElement = $('textarea');
+		var inputElements = $('input:not("#email")');
+
+		function validateInput() {
+
+			inputElements.on('click', this, function() {
+
+				var indexInput = inputElements.index(this);
+				console.log(indexInput);
+				
+
+				inputElements.on('input', function(){
+					var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+					var input = $(this);
+					var is_input = input.val();
+					var erg = format.test(is_input);
+					console.log('erg: ' + erg);
+					// console.log('validation name: ' + validText[indexInput]);
+
+					if(is_input.length >= 3 && erg == false) {
+						$(this, inputElements).next('span').addClass('valid');
+						return true;
+					} else if (is_input.length >= 3 && erg == true){
+						// console.log($(this, inputElements).next().next());
+						$(this, inputElements).next().next().text('Enter valid ' + validText[indexInput]).css('display', 'block');
+						// console.log($(this, inputElements).find('p.invalid'));
+						return false;
+					} else if (is_input.length < 4) {
+						$(this, inputElements).next('span').removeClass('valid');
+						$(this, inputElements).next().next().text('').css('display', 'none');
+						return false;
+					}
+					
+				})
+
+
+
 			});
+		};
 
-			if ($.trim(email).length == 0) {
-					alert ('enter valid email');
-					event.preventDefault();
-				};
+		validateInput();
 
-				if (validateEmail(email)) {
-					return;
-				} else {
-					alert ('invalid email');
-					event.preventDefault();
-				};
 
-				function validateEmail(email) {
-		        var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-		        if(regex.test(email)) {
-		           return true;
-		        } else {
-		           return false;
-		        }
-		      };
+		function validateEmail() {
+			emailElement.on('click', this, function(){
+				var getEmailClass = $(this).parent().attr('class', 'col-70 form-validation');
+				//returns index for validText array
+				var myIndex = inputElementClass.index(getEmailClass);
 
-		      validateEmail();
-		});
+				emailElement.on('input', function() {
+					var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+					var input = $(this);
+					var is_email = input.val();
+					var erg = regex.test(is_email); // returns true is email
+
+					if (is_email && erg == true) {
+						$(this).next('span').addClass('valid');
+						$('.invalid', getEmailClass).text('').css('display', 'none');
+						return true;
+					} else if (is_email.length > 7 && erg == false) {
+						$(this).next('span').removeClass('valid');
+						$('.invalid', getEmailClass).text('Enter valid ' + validText[myIndex]).css('display', 'block');
+						return false;
+					} else if (is_email.length < 7)
+						$(this).next('span').removeClass('valid');
+						$('.invalid', getEmailClass).text('').css('display', 'none');
+						console.log($('.invalid', getEmailClass));
+						return false;
+				});
+			});
+			
+		};
+
+		validateEmail();
+
+		function validateMessage() {
+			messagelElement.on('click', this, function(){
+				console.log($(this).parent());
+				var getMessageClass = $(this).parent().find('.form-validation');
+				// console.log(getMessageClass);
+				// console.log(getMessageClass.find('p.invalid').hasClass('invalid'));
+				// returns message index for validText
+				var myIndex = inputElementClass.index(getMessageClass);
+
+				messagelElement.on('input', function() {
+					var input = $(this);
+					var inputVal = input.val();
+					// var format = /[ !@()_\\[\]{};':"\\|,.<>\/?]/;
+					// var erg = format.test(input);
+					if(inputVal.length > 30) {
+						inputVal.length = 30;
+							// console.log($('.invalid', getMessageClass));
+							// $('.invalid', getMessageClass).text('Enter min 100 symbols: ' + inputVal.length+'/out of 100').css('display', 'block');
+						$(this).next('span').addClass('valid');
+					};
+						if(inputVal.length < 30) {
+							$(this).next('span').removeClass('valid');
+							$('.invalid', getMessageClass).text('Enter valid ' + validText[myIndex]).css('display', 'block');
+							console.log(inputVal.length);
+						}
+				});
+			});
+		};
+
+		validateMessage();
+
+
+
+
+
+			// var contactForm = {
+			// 	firstName: first_name.length,
+			// 	lastName: last_name.length,
+			// 	email: email.length,
+			// 	message: message.length
+			// }
+
+		// $('.contact-form').submit(function(event){
+
+
+		// 	// event.preventDefault();
+		// 	console.log('contact form submitted ');
+		// 	console.log(first_name.length);
+		// 	console.log(last_name.length);
+		// 	console.log(company.length);
+		// 	console.log(email.length);
+		// 	console.log(email);
+		// 	console.log(message.length);
+
+
+		// 	jQuery.each(contactForm, function(index, value) {
+
+		// 		if(value < 1) {
+		// 			alert(index + ' is empty field');
+		// 			event.preventDefault();
+		// 		}
+		// 	});
+
+		// 	if ($.trim(email).length == 0) {					
+		// 			event.preventDefault();
+		// 		};
+
+		// 		if (validateEmail(email)) {
+		// 			return;
+		// 		} else {
+		// 			event.preventDefault();
+		// 		};
+
+		// 		function validateEmail(email) {
+		//         var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		//         if(regex.test(email)) {
+		//            return true;
+		//         } else {
+		//            return false;
+		//         }
+		//       };
+
+		//       validateEmail();
+		// });
+
+
+
+
+		// contact address toggle
+
+		var contact_btn = $('.contact-toggle-btn');
+		var addr = $('section.address');
+		var addr_wrapper = $('.address-wrapper');
+	
+		contact_btn.on('click', function(){
+				addr.toggleClass('addressToggle', function(){
+					if(addr.hasClass('addressToggle')){
+						addr_wrapper.delay(100).fadeIn(300);						
+					} else {
+						addr_wrapper.delay(-100).fadeOut(200);
+					}
+				})
+			});
 
 
 

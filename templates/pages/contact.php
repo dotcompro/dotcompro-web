@@ -9,58 +9,76 @@
 
 				<!-- <form method="POST" action="mail.php" class="contact-form contact-items" name="contact-form"> -->
 
-					<form class="contact-form contact-items" name="contact-form">
+					<form class="contact-form contact-items" name="contact-form" autocomplete="off">
 
 					<div class="contact-row">
-						<div class="col-30">
+						<!-- <div class="col-30">
 							<label for="fname">First name</label>
-						</div>
-						<div class="col-70">
-							<input type="text" id="firstName" placeholder="Enter your name" name ="first_name">
+						</div> -->
+						<div class="col-70 form-validation">
+							<input type="text" id="firstName" placeholder="Your Name (required)" name ="first_name">
+							<span></span>
+							<p class="invalid"></p>
 						</div>
 					</div>
 
 					<div class="contact-row">
-						<div class="col-30">
+						<!-- <div class="col-30">
 							<label for="lname">Last name</label>
-						</div>
-						<div class="col-70">
-							<input type="text" id="lastName" placeholder="Enter your last name" name="last_name">
+						</div> -->
+						<div class="col-70 form-validation">
+							<input type="text" id="lastName" placeholder="Your Last Name (required)" name="last_name">
+							<span></span>
+							<p class="invalid"></p>
 						</div>
 					</div>
 
 					<div class="contact-row">
-						<div class="col-30">
+						<!-- <div class="col-30">
 							<label for="company">Company</label>
-						</div>
-						<div class="col-70">
-							<input type="text" id="company" placeholder="Your company" name="company">
+						</div> -->
+						<div class="col-70 form-validation">
+							<input type="text" id="company" placeholder="Your Company" name="company">
 						</div>
 					</div>
 
 					<div class="contact-row">
-						<div class="col-30">
+						<!-- <div class="col-30">
 							<label for="email">E-mail</label>
-						</div>
-						<div class="col-70">
-							<input type="email" id="email" placeholder="Your email" name="email">
+						</div> -->
+						<div class="col-70 form-validation">
+							<input type="email" id="email" placeholder="Your Email (required)" name="email">
+							<span></span>
+							<p class="invalid"></p>
 						</div>
 					</div>
-
-					<div class="contact-row">
-						<div class="col-30">
+					<hr class="hr"/>
+					<div class="contact-row-msg">
+						<!-- <div class="col-30">
 							<label for="subject">Message</label>
-						</div>
-						<div id="text-message">
-							<textarea id="message-area" name="msg-area" placeholder="Enter your message here"></textarea>
+						</div> -->
+						<div class="form-validation" id="text-message">
+							<textarea id="message-area" name="msg-area" placeholder="Your Message (required)"></textarea>
+							<span></span>
+							<p class="invalid"></p>
 						</div>
 					</div>
 
 						<input class="action-button" type="submit" value="Send" name="submit">
 						<input class="action-button" type="reset" value="Delete" name="reset">
-				</form>
-	
 
+						<section class="address">
+							<p  class="contact-toggle-btn">Contacts</p>
+							<div class="address-wrapper">
+								<p><strong>dotcompro</strong></p>
+								<p>Karolis Ramanauskas</p>
+								<p>Münchner Strasse 7</p>
+								<p>82008 Unterhaching</p>
+								<p>+49 176 72751143</p>
+							</div>
+						</section>
+
+				</form>
 
 		</main>
 <!-- zemelapis -->
