@@ -19,7 +19,7 @@ html
 		/*==========================*/
 li li 
 {
-	background: url('/dotcompro/img/newImages/textBackgroundProPNG-1.png');
+	background: url('../img/newImages/textBackgroundProPNG-1.png');
 	float: left;
 	padding: 0;
 	margin-left: 0;
@@ -57,7 +57,7 @@ div.borderContainer:not(.submenuBorderContainer)
 	position: fixed;
 	width: 100%;
 	height: 6rem; 
-	background: url('/dotcompro/img/newImages/HeaderBackgroundPro45degreePNG.png');
+	background: url('../img/newImages/HeaderBackgroundPro45degreePNG.png');
 	background-size: cover;	
 	z-index: 10;
 	box-shadow: 5px 0px 25px 5px #696969;
@@ -178,12 +178,10 @@ textarea:focus ~ .floating-label
 /*			HOMEPAGE		*/
 /*==========================*/
 
-
-#section0 
-{
-	background-image: url('/dotcompro/img/newImages/arch_tunnel.jpeg');
-	background-size: cover;
-	background-repeat: no-repeat;
+div#section0 {
+    background-image: url(../img/newImages/paint.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .homePageH1
@@ -226,7 +224,6 @@ div.homePageTextContainer
 	display: block;
 	align-self: center;
 	flex: 1.5;
-	/*max-height: 36rem;*/
 	background-color: rgba(255,255,255,0);
 	margin: auto;
 }
@@ -235,7 +232,6 @@ div.introText
 	display: block;
 	width: 80%;
 	margin-right: 0px !important;
-	/*max-height: 36rem;*/
 	overflow-y: auto;
 	overflow-x: hidden;
 	text-align: center;
@@ -337,7 +333,7 @@ a.serviceLink:hover
 	padding: .5rem;
 	margin-top: .25rem;
 	text-align: start;
-	background-image: url('/dotcompro/img/newImages/serviceBackgroundPNG.png');
+	background-image: url('../img/newImages/serviceBackgroundPNG.png');
 	background-size: cover;
 	background-repeat: repeat;
 	z-index: 10;	
@@ -457,17 +453,6 @@ a.serviceLink:hover
 		background-position: 0% 50%
 	}
 }
-
-/*h1,
-h6 {
-	font-family: 'Open Sans';
-	font-weight: 300;
-	text-align: center;
-	position: absolute;
-	top: 45%;
-	right: 0;
-	left: 0;
-}*/
 
 .table-wrapper
 {
@@ -941,11 +926,9 @@ section.info-text-block
 }
 .webDev-gallery  ul li {
   position: relative;
-  /*background-color: #636363;*/
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  box-shadow: 0px 1px 13px 5px #000;
 }
 
 .webDev-gallery ul li:before
@@ -1560,7 +1543,7 @@ li .pricing-list-icon
 .contact-body-wrapper
 {
 	height: 70%;
-	background-image: url(/dotcompro/img/newImages/workspace.jpg);
+	background-image: url(../img/newImages/workspace.jpg);
     background-size: cover;
 }
 
@@ -1690,7 +1673,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus
 	margin: auto;
 	padding: 5px 35px 5px 5px;
 	color: #a5a5a5;
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 
 input.action-button
@@ -1717,7 +1700,9 @@ input.action-button:hover, p.contact-toggle-btn:hover
 }
 
 hr.hr {
-	margin: 15px 0;
+	margin: 0;
+	padding: 0;
+	height: 15px;
 	border: none;
 	clear: both;
 	width: 100%;
@@ -1826,8 +1811,31 @@ p.contact-toggle-btn
 }
 
 
+/*==========================================*/
+/* 			COUNT VALIDATION PUZZLE			*/
+/*==========================================*/
 
 
+#countCheck
+{
+	position: absolute;
+	width: 20rem;
+	height: 10rem;
+	top: 0;
+	left: 0;
+	background-color: #840000;
+	border: 1px solid red;
+	box-shadow: 1px 0px 31px 1px #1d1d1d;
+	display: none;
+}
+
+p.numberPuzzle
+{
+	text-align: center;
+	color: #cacaca;
+	margin: 0;
+	padding: 0;
+}
 
 
 /*==========================*/
@@ -2325,7 +2333,7 @@ ul li.gallery-active img
 	.menuLinkContainer
 	{
 		height: 4rem;
-		background-image: url('/dotcompro/img/newImages/headerBackgroundPro45degreePNG.png');
+		background-image: url('../img/newImages/headerBackgroundPro45degreePNG.png');
 		background-size: cover;
 		background-repeat: repeat;
 	}

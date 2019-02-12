@@ -40,7 +40,7 @@
 								<div class="pricing-icons" id="icon-image-1"></div>
 							</div>
 							<div class="pricing-description">
-								<h3>Ab € 800</h3>
+								<h3>Ab € 000</h3>
 								<ul>
 									<li><p>1-5</p></li>
 									<li><p>Fairly attractive</p></li>
@@ -56,7 +56,7 @@
 								<div class="pricing-icons" id="icon-image-2"></div>
 							</div>
 							<div class="pricing-description">
-								<h3>Ab € 1500</h3>
+								<h3>Ab € 0000</h3>
 								<ul>
 									<li><p>6-15</p></li>
 									<li><p>Fairly attractive</p></li>
@@ -72,7 +72,7 @@
 								<div class="pricing-icons" id="icon-image-3"></div>
 							</div>
 							<div class="pricing-description">
-								<h3>Ab € 2000</h3>
+								<h3>Ab € 0000</h3>
 								<ul>
 									<li><p>16- unlimited</p></li>
 									<li><p>High end</p></li>
@@ -101,7 +101,7 @@
 									<div class="pricing-icons" id="icon-image-1"></div>
 								</div>
 								<div class="pricing-description">
-									<h3>Ab € 800</h3>
+									<h3>Ab € 000</h3>
 									<ul>
 										<li><p>Number of concepts: 3-5</p></li>
 										<li><p>file formats:</p></li>
@@ -133,7 +133,7 @@
 								<div class="pricing-icons" id="icon-image-1"></div>
 							</div>
 							<div class="pricing-description">
-								<h3>Ab € 800</h3>
+								<h3>Ab € 000</h3>
 								<ul>
 									<li><p>1-5</p></li>
 									<li><p>Fairly attractive</p></li>
@@ -149,7 +149,7 @@
 								<div class="pricing-icons" id="icon-image-2"></div>
 							</div>
 							<div class="pricing-description">
-								<h3>Ab € 1500</h3>
+								<h3>Ab € 0000</h3>
 								<ul>
 									<li><p>6-15</p></li>
 									<li><p>Fairly attractive</p></li>
@@ -165,7 +165,7 @@
 								<div class="pricing-icons" id="icon-image-3"></div>
 							</div>
 							<div class="pricing-description">
-								<h3>Ab € 2000</h3>
+								<h3>Ab € 0000</h3>
 								<ul>
 									<li><p>16- unlimited</p></li>
 									<li><p>High end</p></li>

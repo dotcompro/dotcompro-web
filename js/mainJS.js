@@ -1,5 +1,4 @@
-
-	//1. ISTRINTI MESLA
+//1. ISTRINTI MESLA
 
 
 	var flyout = 
@@ -169,18 +168,6 @@ $(document).ready(function(){
 				$(document).ready(function(){
 					$("h1.homePageTitle").fadeIn(4000);
 				}, 2500);
-				
-				// var ContainerHeight = "-"+$('div.homePageH1').height()+"px";
-				// console.log(ContainerHeight);
-				// $(".homePageH1 h1").css('top', ContainerHeight);
-				// var elementHeightInpercent = ($(".homePageH1 h1").height() / 
-				// 	($("div.homePageH1").height()+$('div.header-container').height()))*100;
-				// console.log(elementHeightInpercent);
-				// var emptySpaceInPercent = 100 - elementHeightInpercent;
-				// console.log(emptySpaceInPercent);
-				// var top = Math.round(emptySpaceInPercent-1) +"%";
-				// console.log(top);
-				// $(".homePageH1 h1").animate({'opacity':'1', "top": top}, 5000, "easeOutBack");
 			});
 				// isijungus langa maza ir paspaudus ant varneles pirmiausia loopina per funkcijos else Verzweigung, o tik sumazinus, pradeda veikti kitaip. 
 				// slideToggle veikia betkokiu atveju
@@ -205,11 +192,15 @@ $(document).ready(function(){
 
 
 			function openMenu() {
-						$('.toggle-nav').click(function(){
-							$('.navigation').toggle(800);
-							$('#fullpage').toggleClass('fullPageOpacity', 1000);
-						});
+				$('.toggle-nav').click(function(){
+					$('.navigation').toggle(800);
+					$('#fullpage').toggleClass('fullPageOpacity', 1000);
+				});
 			};
+					$('#fullpage').click(function() {
+						$('.navigation').hide(800);
+						$('#fullpage').removeClass('fullPageOpacity', 1000);
+					})
 
 			openMenu();
 
@@ -399,25 +390,19 @@ $(document).ready(function(){
 
 			inputElements.on('click', this, function() {
 
-				var indexInput = inputElements.index(this);
-				console.log(indexInput);
-				
+				var indexInput = inputElements.index(this);				
 
 				inputElements.on('input', function(){
 					var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 					var input = $(this);
 					var is_input = input.val();
 					var erg = format.test(is_input);
-					console.log('erg: ' + erg);
-					// console.log('validation name: ' + validText[indexInput]);
 
 					if(is_input.length >= 3 && erg == false) {
 						$(this, inputElements).next('span').addClass('valid');
 						return true;
 					} else if (is_input.length >= 3 && erg == true){
-						// console.log($(this, inputElements).next().next());
 						$(this, inputElements).next().next().text('Enter valid ' + validText[indexInput]).css('display', 'block');
-						// console.log($(this, inputElements).find('p.invalid'));
 						return false;
 					} else if (is_input.length < 4) {
 						$(this, inputElements).next('span').removeClass('valid');
@@ -458,7 +443,6 @@ $(document).ready(function(){
 					} else if (is_email.length < 7)
 						$(this).next('span').removeClass('valid');
 						$('.invalid', getEmailClass).text('').css('display', 'none');
-						console.log($('.invalid', getEmailClass));
 						return false;
 				});
 			});
@@ -469,11 +453,8 @@ $(document).ready(function(){
 
 		function validateMessage() {
 			messagelElement.on('click', this, function(){
-				console.log($(this).parent());
 				var getMessageClass = $(this).parent().find('.form-validation');
-				// console.log(getMessageClass);
-				// console.log(getMessageClass.find('p.invalid').hasClass('invalid'));
-				// returns message index for validText
+
 				var myIndex = inputElementClass.index(getMessageClass);
 
 				messagelElement.on('input', function() {
@@ -483,14 +464,13 @@ $(document).ready(function(){
 					// var erg = format.test(input);
 					if(inputVal.length > 30) {
 						inputVal.length = 30;
-							// console.log($('.invalid', getMessageClass));
+
 							// $('.invalid', getMessageClass).text('Enter min 100 symbols: ' + inputVal.length+'/out of 100').css('display', 'block');
 						$(this).next('span').addClass('valid');
 					};
 						if(inputVal.length < 30) {
 							$(this).next('span').removeClass('valid');
 							$('.invalid', getMessageClass).text('Enter valid ' + validText[myIndex]).css('display', 'block');
-							console.log(inputVal.length);
 						}
 				});
 			});
@@ -574,9 +554,10 @@ $(document).ready(function(){
 
 
 // baigiasi document.ready()
+
+
 }); 
-
-
+		
 		// lightbox function turn off
 
 		function closeModal(){
@@ -584,4 +565,4 @@ $(document).ready(function(){
 			$('.lightbox ul li').removeClass('gallery-active');
 		};
 
-		$(document).ready(closeModal);
+		closeModal();

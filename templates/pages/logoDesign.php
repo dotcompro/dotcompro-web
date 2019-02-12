@@ -24,15 +24,15 @@
 					<li><img src="img/newImages/paint.jpg" alt=""></li>
 					<li><img src="img/newImages/redLogo.png" alt=""></li>
 					<li><img src="img/newImages/paint2.jpg" alt=""></li>
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
+					<li><img src="img/dotcomproLogo.jpg" alt=""></li>
+					<li><img src="img/garmisch1.jpg" alt=""></li>
+					<li><img src="img/garmisch2.jpg" alt=""></li>
+					<li><img src="img/garmisch3.jpg" alt=""></li>
+					<li><img src="img/garmisch4.png" alt=""></li>
+					<li><img src="img/slide.jpg" alt=""></li>
+					<li><img src="img/pixelLogo5.jpg" alt=""></li>
+					<li><img src="img/pixelLogo3.png" alt=""></li>
+					<li><img src="img/pixelLogo4.png" alt=""></li>
 				</ul>
 			</section>
 				<section class="lightbox">
@@ -50,15 +50,15 @@
 								<li><img src="img/newImages/paint.jpg" alt=""></li>
 								<li><img src="img/newImages/redLogo.png" alt=""></li>
 								<li><img src="img/newImages/paint2.jpg" alt=""></li>
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
+								<li><img src="img/dotcomproLogo.jpg" alt=""></li>
+								<li><img src="img/garmisch1.jpg" alt=""></li>
+								<li><img src="img/garmisch2.jpg" alt=""></li>
+								<li><img src="img/garmisch3.jpg" alt=""></li>
+								<li><img src="img/garmisch4.png" alt=""></li>
+								<li><img src="img/slide.jpg" alt=""></li>
+								<li><img src="img/pixelLogo5.jpg" alt=""></li>
+								<li><img src="img/pixelLogo3.png" alt=""></li>
+								<li><img src="img/pixelLogo4.png" alt=""></li>
 							</ul>
 						<img id="gal_arrow_right" src="img/newImages/gallery_arrow_right.png" alt="right">
 				</section>

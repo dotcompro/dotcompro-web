@@ -2,7 +2,7 @@
 	<div class="why-body">
 		<div class="section-row" id="section-1">
 			<div class="logo-wrapper">
-				<img src="/dotcompro/img/newImages/why_section_logo.png" alt="why section logo">
+				<img src="img/newImages/why_section_logo.png" alt="why section logo">
 			</div>
 		</div>
 		<div class="section-row" id="section-2">

@@ -17,7 +17,7 @@
 						</div> -->
 						<div class="col-70 form-validation">
 							<input type="text" id="firstName" placeholder="Your Name (required)" name ="first_name">
-							<span></span>
+							<span id="span-0"></span>
 							<p class="invalid"></p>
 						</div>
 					</div>
@@ -28,7 +28,7 @@
 						</div> -->
 						<div class="col-70 form-validation">
 							<input type="text" id="lastName" placeholder="Your Last Name (required)" name="last_name">
-							<span></span>
+							<span id="span-1"></span>
 							<p class="invalid"></p>
 						</div>
 					</div>
@@ -39,6 +39,8 @@
 						</div> -->
 						<div class="col-70 form-validation">
 							<input type="text" id="company" placeholder="Your Company" name="company">
+							<span id="span-2"></span>
+							<p class="invalid"></p>
 						</div>
 					</div>
 
@@ -48,7 +50,7 @@
 						</div> -->
 						<div class="col-70 form-validation">
 							<input type="email" id="email" placeholder="Your Email (required)" name="email">
-							<span></span>
+							<span id="span-3"></span>
 							<p class="invalid"></p>
 						</div>
 					</div>
@@ -59,7 +61,7 @@
 						</div> -->
 						<div class="form-validation" id="text-message">
 							<textarea id="message-area" name="msg-area" placeholder="Your Message (required)"></textarea>
-							<span></span>
+							<span id="span-4"></span>
 							<p class="invalid"></p>
 						</div>
 					</div>
@@ -77,7 +79,11 @@
 								<p>+49 176 72751143</p>
 							</div>
 						</section>
-
+						
+						<!-- <section id="countCheck">
+							<p class="numberPuzzle"></p>
+							<input type="text" id="answerInput" name="answerInput" placeholder="Enter your answer">
+						</section> -->
 				</form>
 
 		</main>
